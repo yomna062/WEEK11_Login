@@ -62,13 +62,14 @@ form button:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(to right, #3b2e40 0%, #967aa1 100%);
+  background: #967aa1;
   color: white;
+  height: 70px;
   text-align: center;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: end;
+  align-items: end;
 }
 
 #navbar button {

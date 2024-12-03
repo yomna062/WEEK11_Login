@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (findUserByEmail(email)) {
       Swal.fire({
-          color:"black",
           icon: "error",
           title: "Email Already Registered",
           text: "Use a different email address.",
@@ -62,13 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
       saveUsers(users);
   
       Swal.fire({
-        color:"black",
           icon: "success",
           title: "Registration Successful",
           text: "Your account has been created. Please login.",
           confirmButtonColor: 'green'
       }).then(() => {
-          showPage(loginDiv); // Navigate to the login page after user dismisses the alert
+          showPage(loginDiv); 
       });
   }
   
@@ -95,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showPage(loginDiv);
   }
 
-
+  // Navigate to Login from Navbar
   navLoginButton.addEventListener("click", () => showPage(loginDiv));
 
   regForm.addEventListener("submit", handleRegistration);
