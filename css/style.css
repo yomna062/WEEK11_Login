@@ -1,0 +1,86 @@
+/*   font-family: "Pacifico", cursive; */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to left, black 0%, #967aa1 100%);  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h2{
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  color: white;
+
+}
+#app {
+  background: #967aa1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+box-shadow: 0 0 10px 10px rgba(194, 140, 199, 0.2);
+  text-align: center;
+}
+
+.form-container {
+  display: none;
+}
+
+.form-container.active {
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #967aa1;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -5px;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #3b2e40 0%, #967aa1 100%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: end;
+}
+
+#navbar button {
+  background: white;
+  color: #967aa1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#navbar button:hover {
+  background: #f0f0f0;
+}
